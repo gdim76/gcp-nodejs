@@ -6,7 +6,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    
+
     const html = `
         <!DOCTYPE html>
         <html>
@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
             </style>
         </head>
         <body>
-            <div class="header">Welcome to my page</div>
+            <div class="header">Welcome to GCP page</div>
             <div class="content">
                 <p>Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google.</p>
                 <p>It provides infrastructure, platform, and software-as-a-service solutions for businesses worldwide.</p>
@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
         </body>
         </html>
     `;
-    
+
     res.end(html);
 });
 
